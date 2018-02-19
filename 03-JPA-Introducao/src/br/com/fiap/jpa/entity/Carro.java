@@ -27,14 +27,14 @@ public class Carro implements Serializable{
 	@GeneratedValue(generator="carro", strategy=GenerationType.SEQUENCE)
 	private int id;
 
-	@Column(name="DS_MODELO", nullable=false)
+	@Column(name="DS_MODELO", nullable=false, length = 100)
 	private String modelo;
 	
 	//Classe wrapper para valores nulos
 	@Column(name="NR_ANO")
 	private int ano;
 	
-	@Column(name="DS_MOTOR")
+	@Column(name="DS_MOTOR", length = 10)
 	private String motor;
 	
 	@Column(name="DS_MONTADORA")
