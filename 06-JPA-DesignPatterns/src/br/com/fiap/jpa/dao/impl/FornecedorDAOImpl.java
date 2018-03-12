@@ -10,7 +10,6 @@ public class FornecedorDAOImpl extends GenericDAOImpl<Fornecedor, String> implem
 
 	public FornecedorDAOImpl(EntityManager em) {
 		super(em);
-		// TODO Auto-generated constructor stub
 	}
 
 }

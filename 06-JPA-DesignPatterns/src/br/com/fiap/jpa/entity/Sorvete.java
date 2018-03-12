@@ -15,7 +15,7 @@ public class Sorvete {
 
 	@Id
 	@Column(name="NM_CODIGO")
-	@GeneratedValue(generator="sorvetes",strategy=GenerationType.SEQUENCE)
+	@GeneratedValue(generator="sorvete",strategy=GenerationType.SEQUENCE)
 	private int codigo;
 	
 	@Column(name="DS_SABOR", nullable=false,length=50)
@@ -49,6 +49,16 @@ public class Sorvete {
 	public void setPreco(double preco) {
 		this.preco = preco;
 	}
+
+	public int getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
+	}
+
+	
 	
 	
 	
