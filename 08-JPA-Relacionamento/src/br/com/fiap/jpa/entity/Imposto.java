@@ -33,7 +33,8 @@ public class Imposto {
 	private List<NotaFiscal> notas;
 	
 	
-	
+
+
 	public Imposto(double valor, String nome, List<NotaFiscal> notas) {
 		super();
 		this.valor = valor;
@@ -41,8 +42,9 @@ public class Imposto {
 		this.notas = notas;
 	}
 
-	public int getCodigo() {
-		return codigo;
+	public Imposto() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
 
 	public void setCodigo(int codigo) {
